@@ -1,0 +1,308 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar .logo img {
+    width: 120px;
+}
+
+.navbar .nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-list li {
+    margin: 0 15px;
+}
+
+.navbar .nav-list li a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-list li a:hover {
+    color: #ff6f61;
+}
+
+.navbar .rightnav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .rightnav input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.navbar .rightnav button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbar .rightnav button:hover {
+    background-color: #e65c50;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #2c3e50;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background-color: #e65c50;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+#services {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services-list {
+    list-style: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.services-list li {
+    margin-bottom: 10px;
+}
+
+/* Products Section */
+#products {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+#products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.product-card .btn {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.product-card .btn:hover {
+    background-color: #e65c50;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+#contact button {
+    padding: 12px 30px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #e65c50;
+}
+
+.contact-details {
+    margin-top: 30px;
+}
+
+.contact-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rightnav {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .rightnav input {
+        width: 80%;
+    }
+}
+

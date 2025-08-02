@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.phone - Transforming Phones Doorstep</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-list {
+                flex-direction: column;
+                width: 100%;
+            }
+            .rightnav {
+                margin-top: 10px;
+                width: 100%;
+            }
+            .rightnav input {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="img/logo.img.png" alt="Dr.Phone Logo"></div>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#products">Our products</a></li>
+
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search" placeholder="Search...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Dr.Phone</h1>
+            <p>PHONE DAMAGE AND NO TIME TRY OUR ONLINE SERVICE WITH NO EXTRA FEES.
+                <br>Your Trusted Mobile Repair & Store Solution.
+                The only online store you can trust.
+            </p>
+            <a href="#services"><button class="btn">Explore Services</button></a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Dr.Phone provides professional mobile repair services and offers the latest smartphones and accessories. Our mission is to bring your devices back to life with care and speed.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <ul class="services-list">
+            <li>✔ Screen Replacement</li>
+            <li>✔ Battery Replacement</li>
+            <li>✔ Water Damage Repair</li>
+            <li>✔ Software Installation</li>
+            <li>✔ Mobile Accessories</li>
+            <li>✔ Products</li>
+        </ul>
+    </section>
+
+    <section id="products" class="section products">
+        <h2>Our Products</h2>
+        <div id="product-container" class="product-grid"></div>
+       
+        <!-- <img src="${product.image}" alt="${product.name}" onerror="this.src='img/placeholder.jpg'"> -->
+
+    </section>
+   
+      
+
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." rows="5" required></textarea>
+
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-details">
+            <h3>Get in Touch</h3>
+            <p>Email: support@drphone.com</p>
+            <p>Phone: +91 70058 *****</p>
+            <p>Address: Dr.Phone Store, Main Road, Dimapur, Nagaland</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dr.Phone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
